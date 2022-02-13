@@ -1,0 +1,17 @@
+version: '2'
+services:
+  openDirectory:
+    image: caloldur/tls-open-directory
+    container_name: open-directory-service
+    ports:
+      - "44431:44431"
+    restart: always
+    environment:
+      - SERVER_ADDRESS=0.0.0.0
+      - PORT=44431
+      - DATA_DIRECTORY=/data
+      - CERT_FILE=/ssl/fullchain.pem
+      - KEY_FILE=/ssl/privatekey.pem
+    volumes:
+      - /data/containers/storage/opendir:/data
+      - /data/containers/storage/certs:/ssl
