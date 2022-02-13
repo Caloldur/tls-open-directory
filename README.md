@@ -1,6 +1,6 @@
 # tls-open-directory
 A simple way to deploy a directory listing.
-#Systemd
+# Systemd
 ```
 git clone https://github.com/Caloldur/tls-open-directory.git
 cd ./tls-open-directory
@@ -32,7 +32,7 @@ Run and enable the service
 $ systemctl start tls-open-directory.service
 $ systemctl enable tls-open-directory.service
 ````
-#Docker
+# Docker
 ### Building Docker Image
 ```
 git clone https://github.com/Caloldur/tls-open-directory.git
