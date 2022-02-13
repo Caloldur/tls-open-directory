@@ -2,11 +2,11 @@ import http.server, ssl
 import os
 
 try:
-    SERVER_ADDRESS = os.getenv("SERVER_ADDRESS")
-    PORT = os.getenv("PORT")
-    DATA_DIRECTORY = os.getenv("DATA_DIRECTORY")
-    CERT_FILE= os.getenv("CERT_FILE")
-    KEY_FILE = os.getenv("KEY_FILE")
+    SERVER_ADDRESS = os.getenv("TOD_SERVER_ADDRESS")
+    PORT = os.getenv("TOD_PORT")
+    DATA_DIRECTORY = os.getenv("TOD_DATA_DIRECTORY")
+    CERT_FILE= os.getenv("TOD_CERT_FILE")
+    KEY_FILE = os.getenv("TOD_KEY_FILE")
 except:
     print("Environment Variable not found closing.")
     exit()

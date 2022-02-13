@@ -7,11 +7,11 @@ services:
       - "44431:44431"
     restart: always
     environment:
-      - SERVER_ADDRESS=0.0.0.0
-      - PORT=44431
-      - DATA_DIRECTORY=/data
-      - CERT_FILE=/ssl/fullchain.pem
-      - KEY_FILE=/ssl/privatekey.pem
+      - TOD_SERVER_ADDRESS=0.0.0.0
+      - TOD_PORT=44431
+      - TOD_DATA_DIRECTORY=/data
+      - TOD_CERT_FILE=/ssl/fullchain.pem
+      - TOD_KEY_FILE=/ssl/privatekey.pem
     volumes:
       - /data/containers/storage/opendir:/data
       - /data/containers/storage/certs:/ssl

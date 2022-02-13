@@ -1,13 +1,13 @@
 [Unit]
-Description=OpenDirectory Service
+Description=TLS-Open-Directory-Service
 After=network.target
 StartLimitIntervalSec=0
 [Service]
 Type=simple
 Restart=always
 RestartSec=1
-User=
-ExecStart=/usr/bin/python run.py
+User=CHANGEME
+ExecStart=/usr/bin/python /src/main.py
 
 [Install]
 WantedBy=multi-user.target
